@@ -17,10 +17,12 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.4.1",
     "next": "^9.3.4",
+    "next-ga": "^2.3.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "sass": "^1.26.3"
   }
 }

@@ -22,6 +22,25 @@ export default function Layout(props) {
           crossorigin="anonymous"
         />
 
+        {/* Global site tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-163332503-1"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163332503-1"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+              
+                gtag('config', 'UA-163332503-1');
+              </script>
+              `,
+          }}
+        />
         <title>COVID-19 Barter Trade</title>
       </Head>
       <NavComponent />
