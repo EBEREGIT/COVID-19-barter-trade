@@ -1,0 +1,61 @@
+$site-blue: #28589c;
+$site-gray: #dfe1ee;
+$site-white: #ffffff;
+
+body {
+  background-color: $site-gray;
+
+  .card{
+    margin-top: 2%;
+    border: 1px solid $site-blue;
+
+    .table{
+      thead{
+        th{
+        border: none !important;
+      }
+      }
+      
+            
+    }
+  }
+
+  #filter-post{
+    background-color: $site-white;
+    padding-top: 1%;
+  }
+
+  #create-post {
+    border: 1px solid $site-blue;
+    padding: 1%;
+    padding-bottom: 0;
+    margin-top: 2%;
+    margin-bottom: 0;
+    background-color: $site-white;
+
+    legend{
+      margin-left: 1%;
+    }
+
+    button{
+      background-color: $site-blue;
+
+      span{
+        padding-left: 5%;
+      }
+    }
+  }
+
+  nav {
+    background-color: $site-blue;
+
+    a {
+      color: $site-white !important;
+    }
+
+    button {
+      border-color: $site-white !important;
+      background-color: $site-white !important;
+    }
+  }
+}

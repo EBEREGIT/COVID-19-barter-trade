@@ -1,0 +1,33 @@
+body {
+  background-color: #dfe1ee; }
+  body .card {
+    margin-top: 2%;
+    border: 1px solid #28589c; }
+    body .card .table thead th {
+      border: none !important; }
+  body #filter-post {
+    background-color: #ffffff;
+    padding-top: 1%; }
+  body #create-post {
+    border: 1px solid #28589c;
+    padding: 1%;
+    padding-bottom: 0;
+    margin-top: 2%;
+    margin-bottom: 0;
+    background-color: #ffffff; }
+    body #create-post legend {
+      margin-left: 1%; }
+    body #create-post button {
+      background-color: #28589c; }
+      body #create-post button span {
+        padding-left: 5%; }
+  body nav {
+    background-color: #28589c; }
+    body nav a {
+      color: #ffffff !important; }
+    body nav button {
+      border-color: #ffffff !important;
+      background-color: #ffffff !important; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
