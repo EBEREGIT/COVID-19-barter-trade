@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import { Card, Container } from "react-bootstrap/";
-import CreatePost from "../components/CreatePost";
+// import CreatePost from "../components/CreatePost";
 let items = [];
 
 for (let index = 0; index < 10; index++) {
@@ -36,7 +36,7 @@ function HomePage() {
   return (
     <Layout>
       <Container>
-        <CreatePost />
+        {/* <CreatePost /> */}
         {items}
       </Container>
     </Layout>

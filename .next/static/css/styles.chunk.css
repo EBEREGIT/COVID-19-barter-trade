@@ -9,14 +9,11 @@ body {
     background-color: #ffffff;
     padding-top: 1%; }
   body #create-post {
-    border: 1px solid #28589c;
     padding: 1%;
     padding-bottom: 0;
     margin-top: 2%;
     margin-bottom: 0;
     background-color: #ffffff; }
-    body #create-post legend {
-      margin-left: 1%; }
     body #create-post button {
       background-color: #28589c; }
       body #create-post button span {

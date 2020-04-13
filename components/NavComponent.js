@@ -1,6 +1,8 @@
 import { Fragment } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, OverlayTrigger } from "react-bootstrap";
 import Filter from "./Filter";
+import About from "./About";
+import CreatePost from "./CreatePost";
 
 export default function NavComponent() {
   return (
@@ -10,19 +12,21 @@ export default function NavComponent() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
+            <CreatePost />
+            <Filter />
             <Nav.Link href="#deets">
-              <i class="fa fa-sign-in" aria-hidden="true"></i> <span>Sign In</span>
+              <i class="fa fa-sign-in" aria-hidden="true"></i>{" "}
+              <span>Sign In</span>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              <i class="fa fa-user-plus" aria-hidden="true"></i> <span>Sign Up</span>
+              <i class="fa fa-user-plus" aria-hidden="true"></i>{" "}
+              <span>Sign Up</span>
             </Nav.Link>
-            <Nav.Link eventKey={3} href="#memes">
-              <i class="fa fa-user-plus" aria-hidden="true"></i> <span>About</span>
-            </Nav.Link>
+
+            <About />
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Filter />
     </Fragment>
   );
 }

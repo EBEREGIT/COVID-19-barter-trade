@@ -104,6 +104,150 @@ module.exports =
 
 /***/ }),
 
+/***/ "./components/About.js":
+/*!*****************************!*\
+  !*** ./components/About.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return About; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\nextjs\\covid-19-barter-trade\\components\\About.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function About() {
+  const {
+    0: show,
+    1: setShow
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  const handleClose = () => setShow(false);
+
+  const handleShow = () => setShow(true);
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+    eventKey: 3,
+    href: "#memes",
+    onClick: handleShow,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }, __jsx("i", {
+    class: "fa fa-info-circle",
+    "aria-hidden": "true",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }), " ", __jsx("span", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 62
+    }
+  }, "About")), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"], {
+    show: show,
+    onHide: handleClose,
+    centered: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Header, {
+    closeButton: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Title, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 11
+    }
+  }, "About")), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    href: "https://github.com/EBEREGIT/COVID-19-barter-trade",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }, "COVID-19 Barter Trade"), " ", "is an innovation brought about due to the fact that Food and other essentials are quite expensive during the COVID-19 pandemic."), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, "I thought it is going to be easier and cheaper if people could exchange what they have for other things that they do not have. This application is provided to connect people for such transactions."), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 9
+    }
+  }, "You may also love to checkout the", " ", __jsx("a", {
+    href: "https://covid19-stat.netlify.com/",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 11
+    }
+  }, "COVID-19 TRACKER"), " I created a while ago."), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }, "Created By", " ", __jsx("a", {
+    href: "https://www.njokusamsonebere.com/",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 11
+    }
+  }, "Njoku Samson Ebere"))));
+}
+
+/***/ }),
+
 /***/ "./components/CreatePost.js":
 /*!**********************************!*\
   !*** ./components/CreatePost.js ***!
@@ -122,51 +266,82 @@ var _jsxFileName = "C:\\nextjs\\covid-19-barter-trade\\components\\CreatePost.js
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function CreatePost() {
-  return __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"], {
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+function NewPost(props) {
+  return __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"], _extends({}, props, {
+    size: "lg",
+    "aria-labelledby": "contained-modal-title-vcenter",
+    centered: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 5
+    }
+  }), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"].Header, {
+    closeButton: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"].Title, {
+    id: "contained-modal-title-vcenter",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }, "Create Post")), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"], {
     id: "create-post",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 5
+      lineNumber: 25,
+      columnNumber: 7
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Row, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 26,
       columnNumber: 7
     }
-  }, __jsx("legend", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 11
-    }
-  }, "Create Post"), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
     as: react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Col"],
     md: "4",
     controlId: "validationCustom01",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 28,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 30,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -174,7 +349,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 31,
       columnNumber: 15
     }
   }, __jsx("i", {
@@ -183,7 +358,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 31,
       columnNumber: 55
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -194,7 +369,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 33,
       columnNumber: 13
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
@@ -204,21 +379,21 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 43,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 44,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 45,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -226,7 +401,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 46,
       columnNumber: 15
     }
   }, __jsx("i", {
@@ -235,7 +410,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 46,
       columnNumber: 55
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -246,7 +421,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 48,
       columnNumber: 13
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
@@ -256,21 +431,21 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 58,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 59,
       columnNumber: 11
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 60,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -278,7 +453,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 61,
       columnNumber: 15
     }
   }, __jsx("i", {
@@ -287,7 +462,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 61,
       columnNumber: 55
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -298,14 +473,14 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 63,
       columnNumber: 13
     }
   })))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Row, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 72,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
@@ -315,21 +490,21 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 74,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 75,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 76,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -337,7 +512,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 77,
       columnNumber: 15
     }
   }, __jsx("i", {
@@ -346,7 +521,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 77,
       columnNumber: 55
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -356,7 +531,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 79,
       columnNumber: 11
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
@@ -366,21 +541,21 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 88,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 89,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 90,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -388,7 +563,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 91,
       columnNumber: 15
     }
   }, __jsx("i", {
@@ -397,7 +572,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 91,
       columnNumber: 55
     }
   }))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -407,14 +582,14 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 93,
       columnNumber: 11
     }
   })))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Row, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 102,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
@@ -424,7 +599,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 104,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -433,7 +608,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 105,
       columnNumber: 11
     }
   }, __jsx("i", {
@@ -442,14 +617,14 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 106,
       columnNumber: 11
     }
   }), __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 107,
       columnNumber: 13
     }
   }, "Photo"))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
@@ -459,7 +634,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 112,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -468,7 +643,7 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 113,
       columnNumber: 11
     }
   }, __jsx("i", {
@@ -477,17 +652,63 @@ function CreatePost() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 114,
       columnNumber: 11
     }
   }), __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 115,
       columnNumber: 13
     }
-  }, "Submit form")))));
+  }, "Submit form")))))));
+}
+
+function CreatePost() {
+  const [modalShow, setModalShow] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 5
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+    href: "#deets",
+    onClick: () => setModalShow(true),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 7
+    }
+  }, __jsx("i", {
+    class: "fa fa-plus",
+    "aria-hidden": "true",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136,
+      columnNumber: 9
+    }
+  }), " ", __jsx("span", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136,
+      columnNumber: 55
+    }
+  }, "Create Post")), __jsx(NewPost, {
+    show: modalShow,
+    onHide: () => setModalShow(false),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 7
+    }
+  }));
 }
 
 /***/ }),
@@ -510,44 +731,119 @@ var _jsxFileName = "C:\\nextjs\\covid-19-barter-trade\\components\\Filter.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
 function Filter() {
-  return __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"], {
+  const {
+    0: show,
+    1: setShow
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  const handleClose = () => setShow(false);
+
+  const handleShow = () => setShow(true);
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+    eventKey: 3,
+    href: "#memes",
+    onClick: handleShow,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }, __jsx("i", {
+    class: "fa fa-filter",
+    "aria-hidden": "true",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }), " ", __jsx("span", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 15
+    }
+  }, "Filter")), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"], {
+    show: show,
+    onHide: handleClose,
+    centered: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"].Header, {
+    closeButton: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"].Title, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 11
+    }
+  }, "Filter Posts")), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"], {
     id: "filter-post",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 5
+      lineNumber: 24,
+      columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Container"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 25,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Row, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 26,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
     as: react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Col"],
-    md: "4",
+    md: "12",
     controlId: "validationCustom01",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 28,
       columnNumber: 11
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 29,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -558,14 +854,14 @@ function Filter() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 30,
       columnNumber: 15
     }
   }), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 37,
       columnNumber: 15
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -573,7 +869,7 @@ function Filter() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 38,
       columnNumber: 17
     }
   }, __jsx("i", {
@@ -582,24 +878,24 @@ function Filter() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 39,
       columnNumber: 19
     }
   }))))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
     as: react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Col"],
-    md: "4",
+    md: "12",
     controlId: "validationCustom02",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 46,
       columnNumber: 11
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 47,
       columnNumber: 13
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Control, {
@@ -607,56 +903,63 @@ function Filter() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 48,
       columnNumber: 15
     }
   }, __jsx("option", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 49,
+      columnNumber: 15
+    }
+  }, "Filter by Location"), __jsx("option", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
       columnNumber: 17
     }
   }, "All"), __jsx("option", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 51,
       columnNumber: 17
     }
   }, "Enugu"), __jsx("option", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 52,
       columnNumber: 17
     }
   }, "Lagos"), __jsx("option", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 53,
       columnNumber: 17
     }
   }, "Abuja"), __jsx("option", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 54,
       columnNumber: 17
     }
   }, "Abuja"), __jsx("option", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 55,
       columnNumber: 17
     }
   }, "Niger")), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Prepend, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 58,
       columnNumber: 15
     }
   }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["InputGroup"].Text, {
@@ -664,7 +967,7 @@ function Filter() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 59,
       columnNumber: 17
     }
   }, __jsx("i", {
@@ -673,30 +976,10 @@ function Filter() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 60,
       columnNumber: 19
     }
-  }))))), __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Group, {
-    as: react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Col"],
-    md: "4",
-    controlId: "validationCustomUsername",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap___WEBPACK_IMPORTED_MODULE_1__["Form"].Check, {
-    type: "switch",
-    id: "custom-switch",
-    label: "Light or Dark mode?",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 13
-    }
-  })))));
+  })))))))))));
 }
 
 /***/ }),
@@ -831,9 +1114,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "react-bootstrap");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Filter */ "./components/Filter.js");
+/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./About */ "./components/About.js");
+/* harmony import */ var _CreatePost__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CreatePost */ "./components/CreatePost.js");
 var _jsxFileName = "C:\\nextjs\\covid-19-barter-trade\\components\\NavComponent.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
 
 
 
@@ -842,7 +1129,7 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 9,
       columnNumber: 5
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
@@ -852,7 +1139,7 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 10,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Brand, {
@@ -860,7 +1147,7 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 11,
       columnNumber: 9
     }
   }, "COVID-19 Barter"), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Toggle, {
@@ -868,7 +1155,7 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 12,
       columnNumber: 9
     }
   }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Collapse, {
@@ -876,7 +1163,7 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
@@ -884,15 +1171,29 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 11
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
+  }, __jsx(_CreatePost__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }), __jsx(_Filter__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }
+  }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
     href: "#deets",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 17,
       columnNumber: 13
     }
   }, __jsx("i", {
@@ -901,15 +1202,15 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 18,
       columnNumber: 15
     }
   }), " ", __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 64
+      lineNumber: 19,
+      columnNumber: 15
     }
   }, "Sign In")), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
     eventKey: 2,
@@ -917,7 +1218,7 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, __jsx("i", {
@@ -926,49 +1227,24 @@ function NavComponent() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 22,
       columnNumber: 15
     }
   }), " ", __jsx("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 66
+      lineNumber: 23,
+      columnNumber: 15
     }
-  }, "Sign Up")), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-    eventKey: 3,
-    href: "#memes",
+  }, "Sign Up")), __jsx(_About__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 26,
       columnNumber: 13
     }
-  }, __jsx("i", {
-    class: "fa fa-user-plus",
-    "aria-hidden": "true",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 15
-    }
-  }), " ", __jsx("span", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 66
-    }
-  }, "About"))))), __jsx(_Filter__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 7
-    }
-  }));
+  })))));
 }
 
 /***/ }),
@@ -987,12 +1263,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var react_bootstrap___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/ */ "react-bootstrap/");
 /* harmony import */ var react_bootstrap___WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap___WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_CreatePost__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/CreatePost */ "./components/CreatePost.js");
 var _jsxFileName = "C:\\nextjs\\covid-19-barter-trade\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
+ // import CreatePost from "../components/CreatePost";
 
 let items = [];
 
@@ -1138,14 +1413,7 @@ function HomePage() {
       lineNumber: 38,
       columnNumber: 7
     }
-  }, __jsx(_components_CreatePost__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 9
-    }
-  }), items));
+  }, items));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);

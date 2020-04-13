@@ -1,12 +1,31 @@
-import { Form, Col, InputGroup, Container } from "react-bootstrap/";
+import { Form, Col, InputGroup, Container, Modal, Nav } from "react-bootstrap/";
+import { Fragment, useState } from "react";
 
 export default function Filter() {
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <Form id="filter-post">
+    <Fragment>
+      {/* anchor tag */}
+      <Nav.Link eventKey={3} href="#memes" onClick={handleShow}>
+      <i class="fa fa-filter" aria-hidden="true"></i>{" "}
+              <span>Filter</span>
+      </Nav.Link>
+
+      {/* modal */}
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Filter Posts</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <Form id="filter-post">
       <Container>
         <Form.Row>
           {/* search */}
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Group as={Col} md="12" controlId="validationCustom01">
             <InputGroup>
               <Form.Control
                 type="text"
@@ -24,9 +43,10 @@ export default function Filter() {
           </Form.Group>
 
           {/* Filter */}
-          <Form.Group as={Col} md="4" controlId="validationCustom02">
+          <Form.Group as={Col} md="12" controlId="validationCustom02">
             <InputGroup>
               <Form.Control as="select">
+              <option>Filter by Location</option>
                 <option>All</option>
                 <option>Enugu</option>
                 <option>Lagos</option>
@@ -42,17 +62,12 @@ export default function Filter() {
               </InputGroup.Prepend>
             </InputGroup>
           </Form.Group>
-
-          {/* switch dark and light mode */}
-          <Form.Group as={Col} md="4" controlId="validationCustomUsername">
-            <Form.Check
-              type="switch"
-              id="custom-switch"
-              label="Light or Dark mode?"
-            />
-          </Form.Group>
         </Form.Row>
       </Container>
     </Form>
+
+        </Modal.Body>
+      </Modal>
+    </Fragment>
   );
 }

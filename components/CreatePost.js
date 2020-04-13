@@ -1,10 +1,29 @@
-import { Form, Button, Col, InputGroup } from "react-bootstrap/";
+import {
+  Nav,
+  Form,
+  Button,
+  Col,
+  InputGroup,
+  Modal
+} from "react-bootstrap/";
+import { Fragment } from "react";
 
-export default function CreatePost() {
+function NewPost(props) {
   return (
-    <Form id="create-post">
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Create Post
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+      <Form id="create-post">
       <Form.Row>
-          <legend>Create Post</legend>
         {/* phone number */}
         <Form.Group as={Col} md="4" controlId="validationCustom01">
         <InputGroup>
@@ -98,5 +117,29 @@ export default function CreatePost() {
         </Form.Group>
       </Form.Row>
     </Form>
+
+      </Modal.Body>
+      {/* <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer> */}
+    </Modal>
+  );
+}
+
+
+export default function CreatePost() {
+  const [modalShow, setModalShow] = React.useState(false);
+
+  return (
+    <Fragment>
+      <Nav.Link href="#deets" onClick={() => setModalShow(true)}>
+        <i class="fa fa-plus" aria-hidden="true"></i> <span>Create Post</span>
+      </Nav.Link>
+
+      <NewPost
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </Fragment>
   );
 }
