@@ -119,9 +119,6 @@ function NewPost(props) {
     </Form>
 
       </Modal.Body>
-      {/* <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer> */}
     </Modal>
   );
 }
@@ -133,7 +130,7 @@ export default function CreatePost() {
   return (
     <Fragment>
       <Nav.Link href="#deets" onClick={() => setModalShow(true)}>
-        <i class="fa fa-plus" aria-hidden="true"></i> <span>Create Post</span>
+        <i className="fa fa-plus" aria-hidden="true"></i> <span>Create Post</span>
       </Nav.Link>
 
       <NewPost

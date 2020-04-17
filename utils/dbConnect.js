@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
-console.log(process.env.MONGO_URI);
 async function dbConnect() {
   mongoose.connect(
     process.env.MONGO_URI,
     {
+      useCreateIndex: true,
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }

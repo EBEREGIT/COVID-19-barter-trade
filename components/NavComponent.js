@@ -15,11 +15,11 @@ export default function NavComponent() {
             <CreatePost />
             <Filter />
             <Nav.Link href="#deets">
-              <i class="fa fa-sign-in" aria-hidden="true"></i>{" "}
+              <i className="fa fa-sign-in" aria-hidden="true"></i>{" "}
               <span>Sign In</span>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              <i class="fa fa-user-plus" aria-hidden="true"></i>{" "}
+              <i className="fa fa-user-plus" aria-hidden="true"></i>{" "}
               <span>Sign Up</span>
             </Nav.Link>
 

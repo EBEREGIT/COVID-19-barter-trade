@@ -39,12 +39,8 @@ const PostSchema = new mongoose.Schema({
     unique: false,
     trim: true,
     maxlength: [100, "Text too long!"],
-  },
-
-  dateCreated: {
-    type: Date,
-    required: true,
-  },
+  }
 });
 
-module.exports = mongoose.model.posts || mongoose.model("Note", PostSchema);
+mongoose.models = {};
+module.exports = mongoose.model.Posts || mongoose.model("Posts", PostSchema);

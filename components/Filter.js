@@ -11,7 +11,7 @@ export default function Filter() {
     <Fragment>
       {/* anchor tag */}
       <Nav.Link eventKey={3} href="#memes" onClick={handleShow}>
-      <i class="fa fa-filter" aria-hidden="true"></i>{" "}
+      <i className="fa fa-filter" aria-hidden="true"></i>{" "}
               <span>Filter</span>
       </Nav.Link>
 
@@ -36,7 +36,7 @@ export default function Filter() {
 
               <InputGroup.Prepend>
                 <InputGroup.Text id="inputGroupPrepend">
-                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <i className="fa fa-search" aria-hidden="true"></i>
                 </InputGroup.Text>
               </InputGroup.Prepend>
             </InputGroup>
@@ -57,7 +57,7 @@ export default function Filter() {
 
               <InputGroup.Prepend>
                 <InputGroup.Text id="inputGroupPrepend">
-                  <i class="fa fa-filter" aria-hidden="true"></i>
+                  <i className="fa fa-filter" aria-hidden="true"></i>
                 </InputGroup.Text>
               </InputGroup.Prepend>
             </InputGroup>
