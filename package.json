@@ -20,7 +20,7 @@
     "mongoose": "^5.9.9",
     "next": "^9.3.4",
     "next-ga": "^2.3.4",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
